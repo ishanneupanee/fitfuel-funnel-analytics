@@ -10,5 +10,5 @@ SELECT
   CASE WHEN user_first_touch_timestamp = event_timestamp THEN 'New' ELSE 'Returning' END AS user_type,
   COUNT(DISTINCT user_pseudo_id) AS users
 FROM `marketing-analytics-506806.analytics_551879761.events_*`
-WHERE _TABLE_SUFFIX BETWEEN '20260828' AND '20260904' AND event_name = 'session_start'
+WHERE _TABLE_SUFFIX BETWEEN '20260828' AND '20260831' AND event_name = 'session_start'
 GROUP BY user_type;
