@@ -13,4 +13,4 @@ SELECT
   COUNT(DISTINCT CASE WHEN event_name = 'begin_checkout' THEN user_pseudo_id END) AS begin_checkout_users,
   COUNT(DISTINCT CASE WHEN event_name = 'purchase' THEN user_pseudo_id END) AS purchase_users
 FROM `marketing-analytics-506806.analytics_551879761.events_*`
-WHERE _TABLE_SUFFIX BETWEEN '20260828' AND '20260904';
+WHERE _TABLE_SUFFIX BETWEEN '20260828' AND '20260831';
