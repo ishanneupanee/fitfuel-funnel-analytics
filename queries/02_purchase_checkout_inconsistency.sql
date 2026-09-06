@@ -12,12 +12,12 @@ SELECT
 FROM (
   SELECT DISTINCT user_pseudo_id
   FROM `marketing-analytics-506806.analytics_551879761.events_*`
-  WHERE _TABLE_SUFFIX BETWEEN '20260828' AND '20260904' AND event_name = 'purchase'
+  WHERE _TABLE_SUFFIX BETWEEN '20260828' AND '20260831' AND event_name = 'purchase'
 ) AS purchasers
 LEFT JOIN (
   SELECT DISTINCT user_pseudo_id
   FROM `marketing-analytics-506806.analytics_551879761.events_*`
-  WHERE _TABLE_SUFFIX BETWEEN '20260828' AND '20260904' AND event_name = 'begin_checkout'
+  WHERE _TABLE_SUFFIX BETWEEN '20260828' AND '20260831' AND event_name = 'begin_checkout'
 ) AS checkouts
 ON purchasers.user_pseudo_id = checkouts.user_pseudo_id
 WHERE checkouts.user_pseudo_id IS NULL;
