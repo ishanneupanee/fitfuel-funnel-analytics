@@ -18,7 +18,7 @@ FROM (
     (SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'page_title') AS page_title,
     COUNT(*) AS view_count
   FROM `marketing-analytics-506806.analytics_551879761.events_*`
-  WHERE _TABLE_SUFFIX BETWEEN '20260828' AND '20260904' AND event_name = 'page_view'
+  WHERE _TABLE_SUFFIX BETWEEN '20260828' AND '20260831' AND event_name = 'page_view'
   GROUP BY page_title
 ) v
 JOIN (
@@ -26,7 +26,7 @@ JOIN (
     (SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'page_title') AS page_title,
     COUNT(*) AS add_to_cart_count
   FROM `marketing-analytics-506806.analytics_551879761.events_*`
-  WHERE _TABLE_SUFFIX BETWEEN '20260828' AND '20260904' AND event_name = 'add_to_cart'
+  WHERE _TABLE_SUFFIX BETWEEN '20260828' AND '20260831' AND event_name = 'add_to_cart'
   GROUP BY page_title
 ) c
 ON v.page_title = c.page_title
