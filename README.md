@@ -2,9 +2,9 @@
 
 A self-directed marketing analytics project analyzing on-site behavior for a demo fitness e-commerce store, using event-level data from GA4 exported to BigQuery.
 
-**Analysis period:** Aug 28 – Sep 4, 2026
-**Live demo site:** [add your Lovable URL here]
-**Live dashboard:** [add your Looker Studio share link here]
+**Analysis period:** Aug 28 – Aug 31, 2026
+**Live demo site:** [(https://fitfuel-analytics-main.vercel.app/)]
+**Live dashboard:** [(https://datastudio.google.com/reporting/f3966c65-45ba-41f9-bc34-ca43b6aee58d)]
 **Full write-up:** see `FitFuel_Funnel_Analysis_Report.pdf`
 
 ## What this is
