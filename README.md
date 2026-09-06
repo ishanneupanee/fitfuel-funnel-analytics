@@ -23,7 +23,7 @@ A self-directed marketing analytics project analyzing on-site behavior for a dem
 - **Traffic is almost entirely first-time visitors** — 99.9% new, virtually no returning-user behavior.
 - **70% of sessions landed on the homepage** rather than a category or product page, suggesting limited use of targeted landing pages.
 
-Full findings, methodology, and recommendations are in `FitFuel_Funnel_Analysis_Report.pdf`.
+Full findings, methodology, and recommendations are in `FitFuel_Funnel_Analysis_Report.pdf`. 
 
 ## Repo structure
 
